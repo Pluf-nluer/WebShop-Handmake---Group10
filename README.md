@@ -2,15 +2,15 @@
 
 📌 Giới thiệu
 
-Dự án Website Bán Hàng Online cho phép:
-•	Người dùng xem sản phẩm, tìm kiếm, thêm vào giỏ hàng, đặt hàng.
-•	Quản trị viên quản lý sản phẩm, đơn hàng, tài khoản người dùng.
+- Dự án Website Bán Hàng Online cho phép:
+  + Người dùng xem sản phẩm, tìm kiếm, thêm vào giỏ hàng, đặt hàng.
+  + Quản trị viên quản lý sản phẩm, đơn hàng, tài khoản người dùng.
 
-Công nghệ sử dụng:
-•	Frontend: HTML, CSS, JavaScript
-•	Backend: Java Servlet, JSP
-•	Database: MySQL
-•	Server: Apache Tomcat
+- Công nghệ sử dụng:
+  + Frontend: HTML, CSS, JavaScript
+  + Backend: Java Servlet, JSP
+  + Database: MySQL
+  + Server: Apache Tomcat
 
 ________________________________________
 
@@ -20,10 +20,10 @@ ________________________________________
 🚀 Cách chạy dự án
 
 - Yêu cầu môi trường
-•	Java JDK 11+
-•	Apache Tomcat 9/10
-•	MySQL 8+
-•	IDE: Eclipse / IntelliJ / NetBeans
+  + Java JDK 11+
+  + Apache Tomcat 9/10
+  + MySQL 8+
+  + IDE: Eclipse / IntelliJ / NetBeans
 
 - Cài đặt
 1.	Clone project
@@ -43,14 +43,14 @@ ________________________________________
 ________________________________________
 🌳 Quy ước phân nhánh
 
-•	main → Code ổn định, đã kiểm thử.
-•	develop → Nhánh phát triển.
-•	feature/[tên-tính-năng] → Code tính năng mới.
-•	fix/[tên-lỗi] → Sửa bug.
+  - main → Code ổn định, đã kiểm thử.
+  - develop → Nhánh phát triển.
+  - feature/[tên-tính-năng] → Code tính năng mới.
+  - fix/[tên-lỗi] → Sửa bug.
 
 👉 Ví dụ:
-git checkout -b feature/cart
-git checkout -b fix/login-error
+  git checkout -b feature/cart
+  git checkout -b fix/login-error
 ________________________________________
 
 🔄 Quy trình làm việc (Workflow)
@@ -68,22 +68,22 @@ ________________________________________
 ________________________________________
 
 📝 Quy ước commit message
-•	feat: ... → Thêm tính năng
-•	fix: ... → Sửa lỗi
-•	docs: ... → Cập nhật tài liệu
-•	style: ... → Chỉnh sửa UI, CSS
-•	refactor: ... → Chỉnh sửa code không đổi logic
-•	test: ... → Thêm/sửa test
+  - feat: ... → Thêm tính năng
+  - fix: ... → Sửa lỗi
+  - docs: ... → Cập nhật tài liệu
+  - style: ... → Chỉnh sửa UI, CSS
+  - refactor: ... → Chỉnh sửa code không đổi logic
+  - test: ... → Thêm/sửa test
 ________________________________________
 
 📦 Deployment
-•	Deploy trên Tomcat server (có thể dùng XAMPP + Tomcat plugin).
-•	Database chạy trên MySQL (local hoặc server).
+  - Deploy trên Tomcat server (có thể dùng XAMPP + Tomcat plugin).
+  - Database chạy trên MySQL (local hoặc server).
 ________________________________________
 
 ✅ Checklist
-•	Code đúng phần được phân công.
-•	Không commit trực tiếp vào main.
-•	Test trước khi tạo Pull Request.
-•	Review code cho nhau trước khi merge
+  - Code đúng phần được phân công.
+  - Không commit trực tiếp vào main.
+  - Test trước khi tạo Pull Request.
+  - Review code cho nhau trước khi merge
 
