@@ -27,7 +27,7 @@ ________________________________________
 
 - Cài đặt
 1.	Clone project
-2.	git clone https://github.com/your-org/ecommerce-jsp.git
+2.	git clone https://github.com/phupy2005-del/WebShop-Group10.git
 3.	Import vào IDE (chọn "Import as Maven project" nếu có dùng Maven).
 4.	Cấu hình Database
   - Tạo database ecommerce trong MySQL.
