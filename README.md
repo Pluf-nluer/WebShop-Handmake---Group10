@@ -1,54 +1,58 @@
-
 🛒 Website Bán Hàng - JSP/Servlet
+
 📌 Giới thiệu
+
 Dự án Website Bán Hàng Online cho phép:
 •	Người dùng xem sản phẩm, tìm kiếm, thêm vào giỏ hàng, đặt hàng.
 •	Quản trị viên quản lý sản phẩm, đơn hàng, tài khoản người dùng.
+
 Công nghệ sử dụng:
 •	Frontend: HTML, CSS, JavaScript
 •	Backend: Java Servlet, JSP
 •	Database: MySQL
 •	Server: Apache Tomcat
+
 ________________________________________
+
 👥 Phân chia công việc
-Thành viên	Công việc
-A	Giao diện (HTML, CSS, JS)
-B	Chức năng đăng nhập/đăng ký (Servlet + DB)
-C	Quản lý sản phẩm (CRUD JSP + JDBC)
-D	Giỏ hàng & thanh toán
-E	Quản lý đơn hàng + báo cáo
+
 ________________________________________
 🚀 Cách chạy dự án
-Yêu cầu môi trường
+
+- Yêu cầu môi trường
 •	Java JDK 11+
 •	Apache Tomcat 9/10
 •	MySQL 8+
 •	IDE: Eclipse / IntelliJ / NetBeans
-Cài đặt
+
+- Cài đặt
 1.	Clone project
 2.	git clone https://github.com/your-org/ecommerce-jsp.git
 3.	Import vào IDE (chọn "Import as Maven project" nếu có dùng Maven).
 4.	Cấu hình Database
-o	Tạo database ecommerce trong MySQL.
-o	Import file database.sql có sẵn trong thư mục db/.
-o	Sửa thông tin DB trong file DBConnection.java:
-o	String url = "jdbc:mysql://localhost:3306/ecommerce";
-o	String user = "root";
-o	String password = "your_password";
+  - Tạo database ecommerce trong MySQL.
+  - Import file database.sql có sẵn trong thư mục db/.
+  - Sửa thông tin DB trong file DBConnection.java:
+  - String url = "jdbc:mysql://localhost:3306/ecommerce";
+  - String user = "root";
+  - String password = "your_password";
 5.	Chạy trên Tomcat
-o	Add project vào Tomcat Server.
-o	Start server và truy cập:
-o	http://localhost:8080/ecommerce
+  - Add project vào Tomcat Server.
+  - Start server và truy cập:
+  - http://localhost:8080/ecommerce
 ________________________________________
 🌳 Quy ước phân nhánh
+
 •	main → Code ổn định, đã kiểm thử.
 •	develop → Nhánh phát triển.
 •	feature/[tên-tính-năng] → Code tính năng mới.
 •	fix/[tên-lỗi] → Sửa bug.
+
 👉 Ví dụ:
 git checkout -b feature/cart
 git checkout -b fix/login-error
 ________________________________________
+
 🔄 Quy trình làm việc (Workflow)
 1.	Lấy code mới nhất:
 2.	git checkout develop
@@ -62,6 +66,7 @@ ________________________________________
 10.	git push origin feature/add-product
 11.	Tạo Pull Request (PR) từ GitHub → merge vào develop.
 ________________________________________
+
 📝 Quy ước commit message
 •	feat: ... → Thêm tính năng
 •	fix: ... → Sửa lỗi
@@ -70,10 +75,12 @@ ________________________________________
 •	refactor: ... → Chỉnh sửa code không đổi logic
 •	test: ... → Thêm/sửa test
 ________________________________________
+
 📦 Deployment
 •	Deploy trên Tomcat server (có thể dùng XAMPP + Tomcat plugin).
 •	Database chạy trên MySQL (local hoặc server).
 ________________________________________
+
 ✅ Checklist
 •	Code đúng phần được phân công.
 •	Không commit trực tiếp vào main.
