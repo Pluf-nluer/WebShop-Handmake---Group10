@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+body {
+    margin: auto;
+    background-color: #f5f1e6;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+header div.logo {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-size: 32px; 
+  font-weight: 700; 
+  color: #c0392b;
+  letter-spacing: 1px; 
+  text-transform: uppercase; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* bóng nhẹ giúp chữ nổi */
+  transition: transform 0.3s ease, color 0.3s ease; /* hiệu ứng hover */
+  cursor: pointer;
+}
+
+header div.logo:hover {
+  color: #ff6b4a;
+  transform: scale(1.05); /* phóng nhẹ khi hover */
+}
+header div.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+header div.others {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.others .icon {
+  position: relative;
+  font-size: 18px;
+  color: #1a1a1a; 
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.others .icon:hover {
+  color: #c0392b;
+  transform: scale(1.1);
+}
+
+.others .badge span {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #c46b1d;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 50%;
+  padding: 2px 6px;
+  line-height: 1;
+}
+li {
+    list-style: none;
+    background: transparent;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.intro {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #4e342e;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  animation: changeBg 8s infinite alternate ease-in-out;
+}
+
+@keyframes changeBg {
+  0% {
+    background-image: url("public/intro_1.png");
+  }
+  50% {
+    background-image: url("public/intro_2.png");
+  }
+  100% {
+    background-image: url("public/intro_1.png");
+  }
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.intro-text h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.intro-text p {
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  font-family: 'Allura', cursive;;
+}
+.intro-text .btn {
+    border: none;
+    background: #ffffff;
+    padding: 12px 24px;
+    border-radius: 15px;
+    width: fit-content;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.intro-text .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
