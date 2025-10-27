@@ -12,49 +12,26 @@
     
 </head>
 <body>
-<header>
-    <div class="logo">
-        Nhóm 10
-    </div>
-    <div class="menu">
-        <li>Trang chủ</li>
-        <li>Giới thiệu</li>
-        <li><a href="/products.html">Sản phẩm</a><i class="fa-solid fa-caret-down"></i></li>
-        <li><a href="/">Tin tức</a></li>
-        <li>Cửa hàng</li>
-        <li>Liên hệ</li>
-    </div>
-    <div class="others">
-        <div class="others">
-            <div class="icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="icon">
-                <i class="fa-regular fa-user"></i>
-            </div>
-            <div class="icon badge" >
-                <i class="fa-regular fa-heart"></i>
-                <span>0</span>
-            </div>
-            <div class="icon badge">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>0</span>
-            </div>
+<div id="header"></div>
+<main class="component">
+    <section class="intro">
+        <div class="intro-text">
+            <h1>Đồ thủ công mỹ nghệ</h1>
+            <p>Tinh tế – Mộc mạc – Đậm bản sắc Việt</p>
+            <a href="#" class="btn">Khám phá ngay</a>
         </div>
-    </div>
-    
-</header>
-<section class="intro">
-  <div class="intro-text">
-    <h1>Đồ thủ công mỹ nghệ</h1>
-    <p>Tinh tế – Mộc mạc – Đậm bản sắc Việt</p>
-    <a href="#" class="btn">Khám phá ngay</a>
-  </div>
-</section>
-<section class="section_danhmuc">
-    <div class="container">
-        
-    </div>
-</section>
+    </section>
+    <section class="section_danhmuc">
+        <div class="container">
+            
+        </div>
+    </section>
+</main>
+<div id="footer"></div>
+<script src="script.js"></script>
+<script>
+    loadComponent("header", "components/header.html");
+    loadComponent("footer", "components/footer.html");
+</script>
 </body>
 </html>
